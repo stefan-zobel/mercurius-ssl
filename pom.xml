@@ -18,6 +18,9 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<fork>true</fork>
+					<!-- this grants access to the restricted API -->
+					<compilerArgument>-XDignore.symbol.file</compilerArgument>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -30,6 +33,9 @@
 						<goals>
 							<goal>jar</goal>
 						</goals>
+						<configuration>
+							<doclint>none</doclint>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
