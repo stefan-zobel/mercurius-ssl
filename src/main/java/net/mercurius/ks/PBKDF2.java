@@ -24,7 +24,7 @@ import java.util.Base64;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
-public final class PBKDF2 {
+final class PBKDF2 {
 
     private static final String PRIV_1 = "@GSr:p\"[dZR6RU;B:s&;4P<3XHPl@\"|r9*Az w#:";
     private static final String PRIV_2 = ",k~m:@HXE-a%%7 c](8J|Yu{d\"`./DK_f'z }^'S";
@@ -39,7 +39,7 @@ public final class PBKDF2 {
 
     private static final int KEY_LENGTH = 51;
 
-    public static char[] getKey(String password) {
+    static char[] getKey(String password) {
         String pwd = password;
         if (pwd == null || "".equals(pwd)) {
             pwd = PRIV_1;
