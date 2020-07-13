@@ -4,8 +4,30 @@
 	<groupId>net.sourceforge.streamsupport</groupId>
 	<artifactId>mercurius-ssl</artifactId>
 	<packaging>jar</packaging>
-	<version>0.9.0</version>
+	<version>0.9.1-SNAPSHOT</version>
 	<name>mercurius-ssl</name>
+	<description>2-way SSL utilities for inhouse applications</description>
+	<url>https://github.com/stefan-zobel/mercurius-ssl/</url>
+
+	<licenses>
+		<license>
+			<name>Apache License, version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Stefan Zobel</name>
+			<email>Spliterator@gmail.com</email>
+			<organization>net.sourceforge.streamsupport</organization>
+			<organizationUrl>https://github.com/stefan-zobel/</organizationUrl>
+		</developer>
+	</developers>
+	<scm>
+		<url>https://github.com/stefan-zobel/mercurius-ssl</url>
+		<connection>scm:git:https://github.com/stefan-zobel/mercurius-ssl.git</connection>
+		<developerConnection>scm:git:https://github.com/stefan-zobel/mercurius-ssl.git</developerConnection>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
