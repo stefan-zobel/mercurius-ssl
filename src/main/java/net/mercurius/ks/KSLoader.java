@@ -66,7 +66,7 @@ public final class KSLoader {
     }
 
     public static char[] passPhrase() {
-        return "VpAovsDbxZdX+k3qed8hqEOeSqknJGT1uYanS69gZ2CBJ6oQuZSCGYky7n4WZGpWNWwR".toCharArray();
+        return "gJhHRgC5OtmcAUg15MOqOqbBhIT6cxtwKGSV2HKio1bMa7vIgykwyWgqEIt4Ys6YfY0z".toCharArray();
     }
 
     public static char[] passPhrase(String password) {
