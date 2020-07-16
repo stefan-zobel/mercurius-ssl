@@ -39,7 +39,7 @@ public final class CertGen {
     private static final int ECDSA_KEY_BITS_DEFAULT = 521;
     // 15 years validity
     private static final long VALIDITY = 15L * 365L * 24L * 60L * 60L;
-    private static final String DUMMY_DN = "CN=GeoTrust Primary Certification Authority - G2, OU=(c) 2007 GeoTrust Inc. - For authorized use only,  O=GeoTrust Inc., C=US";
+    private static final String DUMMY_DN = "CN=GeoTrust Primary Certification Authority - G1, OU=(c) 2007 GeoTrust Inc. - For authorized use only,  O=GeoTrust Inc., C=US";
     private static final String DEFAULT_ALIAS = "localhost";
 
     public static void main(String[] args) {
