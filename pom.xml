@@ -4,7 +4,7 @@
 	<groupId>net.sourceforge.streamsupport</groupId>
 	<artifactId>mercurius-ssl</artifactId>
 	<packaging>jar</packaging>
-	<version>0.9.1-SNAPSHOT</version>
+	<version>0.9.1</version>
 	<name>mercurius-ssl</name>
 	<description>2-way SSL utilities for inhouse applications</description>
 	<url>https://github.com/stefan-zobel/mercurius-ssl/</url>
