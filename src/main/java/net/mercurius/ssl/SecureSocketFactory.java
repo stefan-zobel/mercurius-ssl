@@ -22,7 +22,6 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.nio.file.Path;
 
-import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 
@@ -30,17 +29,14 @@ public class SecureSocketFactory extends SSLSocketFactory {
 
     private static final SecureSocketFactory defaultFactory = new SecureSocketFactory();
 
-    private final SSLContext ctx;
     private final SSLSocketFactory factory;
 
     private SecureSocketFactory() {
-        ctx = new SimpleSSLContext().get();
-        factory = ctx.getSocketFactory();
+        factory = new SimpleSSLContext().get().getSocketFactory();
     }
 
     public SecureSocketFactory(String password, Path keystore) {
-        ctx = SimpleSSLContext.get(password, keystore);
-        factory = ctx.getSocketFactory();
+        factory = SimpleSSLContext.get(password, keystore).getSocketFactory();
     }
 
     /**

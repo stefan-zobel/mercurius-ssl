@@ -20,7 +20,6 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.nio.file.Path;
 
-import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLParameters;
 import javax.net.ssl.SSLServerSocket;
 import javax.net.ssl.SSLServerSocketFactory;
@@ -29,17 +28,14 @@ public class SecureServerSocketFactory extends SSLServerSocketFactory {
 
     private static final SecureServerSocketFactory defaultFactory = new SecureServerSocketFactory();
 
-    private final SSLContext ctx;
     private final SSLServerSocketFactory factory;
 
     private SecureServerSocketFactory() {
-        ctx = new SimpleSSLContext().get();
-        factory = ctx.getServerSocketFactory();
+        factory = new SimpleSSLContext().get().getServerSocketFactory();
     }
 
     public SecureServerSocketFactory(String password, Path keystore) {
-        ctx = SimpleSSLContext.get(password, keystore);
-        factory = ctx.getServerSocketFactory();
+        factory = SimpleSSLContext.get(password, keystore).getServerSocketFactory();
     }
 
     /**
